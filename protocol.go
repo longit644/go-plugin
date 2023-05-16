@@ -15,6 +15,7 @@ const (
 	ProtocolInvalid Protocol = ""
 	ProtocolNetRPC  Protocol = "netrpc"
 	ProtocolGRPC    Protocol = "grpc"
+	ProtocolShm     Protocol = "shm"
 )
 
 // ServerProtocol is an interface that must be implemented for new plugin

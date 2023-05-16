@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+
+option go_package = "github.com/hashicorp/go-plugin/relative;proto";
+
+message PingRequest {
+    bytes data = 1;
+}
+
+message PingResponse {
+    bytes data = 1;
+}
+
+service Service {
+    rpc Ping(PingRequest) returns (PingResponse);
+}
